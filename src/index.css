@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Add Todo */
+input {
+    border-radius: 16px;
+    border: none;
+    padding: 6px 16px;
+    outline: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Todo */
+.incomplete-area {
+    background-color: #6bffb2;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+/* Completed Todo */
+.complete-area {
+    background-color: #fbfb75;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+/* Title */
+.title {
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+/* List */
+li {
+    margin-right: 8px;
+}
+/* list-row */
+.list-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+}
+/* Button */
+button {
+    border-radius: 16px;
+    border: none;
+    padding: 4px 16px;
+    margin-right: 4px;
+}
+
+button:hover {
+    background-color: #ff7fff;
+    /* color: #fff; */
+    cursor: pointer;
 }
