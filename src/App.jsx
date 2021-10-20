@@ -17,6 +17,13 @@ export const App = () =>{
     const newTodos = [...incompleteTodos, todoText];
     setIncompleteTodos(newTodos);
     setTodoText("");
+    /* 
+    spread operation example.
+    const arr1 = [10, 20]
+    const arr2 = [30, 40] 
+    const allArr = [...arr1, ...arr2]  output: [10, 20 30, 40] <= Good one
+    But if const allArr = [arr1, arr2] output: [Array(2), Array(2)] <= Bad one
+    */
   };
 
   // Delete
@@ -31,10 +38,13 @@ export const App = () =>{
     // delete from incomplete-area
     const newIncompleteTodos = [...incompleteTodos];
     newIncompleteTodos.splice(index, 1);
+    // reset incompleteTodos
+    setIncompleteTodos(newIncompleteTodos);
+
     
     // generate into complete-area from incomplete-area
     const newCompleteTodos = [...completeTodos, incompleteTodos[index]];
-    setIncompleteTodos(newIncompleteTodos);
+    // set completeTodos
     setCompleteTodos(newCompleteTodos);
   };
 
